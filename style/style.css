@@ -32,7 +32,10 @@ body{
 	overflow: hidden;
 }
 
-.left{
+.left, img{
+	display: flex;
+	align-self: center;
+	max-width: 1000px;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -44,21 +47,11 @@ body{
 }
 
 h2{
+	display: flex;
+	align-self: center;
 	position: relative;
 	padding: 0 0 10px;
 	margin-bottom: 10px;
-}
-
-h2:after{
-	content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color: #ff3b3b;
 }
 
 .field{
